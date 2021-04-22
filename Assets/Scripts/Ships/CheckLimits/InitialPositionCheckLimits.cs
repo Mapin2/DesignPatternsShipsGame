@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Ships
+namespace Ships.CheckLimits
 {
     public class InitialPositionCheckLimits : ICheckLimits
     {
