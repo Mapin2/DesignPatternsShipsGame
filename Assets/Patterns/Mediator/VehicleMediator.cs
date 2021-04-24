@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Patterns.Mediator
 {
-    public class VehicleMediator : MonoBehaviour, Vehicle
+    public class VehicleMediator : MonoBehaviour, IVehicle
     {
         [SerializeField] private Wheel[] _wheels;
         [SerializeField] private VehicleLight[] _brakeLights;

@@ -14,7 +14,7 @@ namespace Ships
         [SerializeField] private bool _useJoystick;
         [SerializeField] private Joystick _joystick;
         [SerializeField] private JoyButton _joyButton;
-        [SerializeField] private Ship _ship;
+        [SerializeField] private ShipMediator _ship;
 
         private void Awake()
         {

@@ -4,9 +4,9 @@ namespace Patterns.Mediator
 {
     public class SteeringWheel : MonoBehaviour
     {
-        private Vehicle _vehicle;
+        private IVehicle _vehicle;
 
-        public void Configure(Vehicle vehicle)
+        public void Configure(IVehicle vehicle)
         {
             _vehicle = vehicle;
         }

@@ -1,6 +1,6 @@
 ﻿namespace Patterns.Mediator
 {
-    public interface Vehicle
+    public interface IVehicle
     {
         void BrakePressed();
         void BrakeReleased();
