@@ -11,7 +11,7 @@ namespace Ships.Weapons
         [SerializeField] private float _speed;
         [SerializeField] private float _projectileLifeInSeconds;
 
-        public string ID => _id;
+        public string Id => _id;
 
         private void Start()
         {
