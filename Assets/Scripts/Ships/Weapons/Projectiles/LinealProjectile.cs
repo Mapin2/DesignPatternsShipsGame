@@ -1,17 +1,14 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 
-namespace Ships.Weapons
+namespace Ships.Weapons.Projectiles
 {
     [RequireComponent(typeof(Rigidbody2D))]
-    public class Projectile : MonoBehaviour
+    public class LinealProjectile : Projectile
     {
-        [SerializeField] private ProjectileId _id;
         [SerializeField] private Rigidbody2D _rigidbody2D;
         [SerializeField] private float _speed;
         [SerializeField] private float _projectileLifeInSeconds;
-
-        public string Id => _id.Value;
 
         private void Start()
         {

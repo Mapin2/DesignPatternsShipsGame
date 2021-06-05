@@ -306,6 +306,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7788262044183679266, guid: 545dc9f75e349da44888c221cf1a52e3, type: 3}
+      propertyPath: _defaultProjectileId
+      value: 
+      objectReference: {fileID: 11400000, guid: 886e45037c6b580479f762b70a6b5997, type: 2}
     - target: {fileID: 3982472195643883700, guid: 545dc9f75e349da44888c221cf1a52e3, type: 3}
       propertyPath: m_Name
       value: Ship

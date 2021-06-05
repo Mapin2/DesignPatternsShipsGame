@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Ships.Weapons.Projectiles;
+using UnityEngine;
 
 namespace Ships.Weapons
 {
