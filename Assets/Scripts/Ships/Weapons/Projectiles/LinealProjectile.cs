@@ -1,25 +1,22 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Ships.Weapons.Projectiles
 {
-    [RequireComponent(typeof(Rigidbody2D))]
     public class LinealProjectile : Projectile
     {
-        [SerializeField] private Rigidbody2D _rigidbody2D;
         [SerializeField] private float _speed;
-        [SerializeField] private float _projectileLifeInSeconds;
 
-        private void Start()
+        protected override void DoStart()
         {
             _rigidbody2D.velocity = transform.up * _speed;
-            StartCoroutine(DestroyIn(_projectileLifeInSeconds));
         }
 
-        private IEnumerator DestroyIn(float seconds)
+        protected override void DoMove()
         {
-            yield return new WaitForSeconds(seconds);
-            Destroy(gameObject);
+        }
+
+        protected override void DoDestory()
+        {
         }
     }
 }
