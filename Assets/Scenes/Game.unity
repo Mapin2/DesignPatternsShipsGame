@@ -310,22 +310,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ship
       objectReference: {fileID: 0}
-    - target: {fileID: 3982472195643883701, guid: 545dc9f75e349da44888c221cf1a52e3, type: 3}
-      propertyPath: _joystick
-      value: 
-      objectReference: {fileID: 693677934}
-    - target: {fileID: 3982472195643883701, guid: 545dc9f75e349da44888c221cf1a52e3, type: 3}
-      propertyPath: _projectilePrefab
-      value: 
-      objectReference: {fileID: 1286005151461825912, guid: 37a20ef16413a1048ab08b940a30886b, type: 3}
-    - target: {fileID: 3982472195643883701, guid: 545dc9f75e349da44888c221cf1a52e3, type: 3}
-      propertyPath: _fireRateInSeconds
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3982472195643883701, guid: 545dc9f75e349da44888c221cf1a52e3, type: 3}
-      propertyPath: _projectileSpawnPosition
-      value: 
-      objectReference: {fileID: 1019154885}
     - target: {fileID: 3982472195643883703, guid: 545dc9f75e349da44888c221cf1a52e3, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -383,11 +367,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e234a41fb341b204e8b4b9be94d3dd37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &1019154885 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4612422824135159392, guid: 545dc9f75e349da44888c221cf1a52e3, type: 3}
-  m_PrefabInstance: {fileID: 1019154883}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1032916791
 PrefabInstance:
   m_ObjectHideFlags: 0

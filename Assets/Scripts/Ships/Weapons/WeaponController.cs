@@ -1,22 +1,30 @@
-﻿using System.Linq;
+﻿using System;
 using UnityEngine;
 
 namespace Ships.Weapons
 {
     public class WeaponController : MonoBehaviour
     {
-        [SerializeField] private float _fireRateInSeconds;
-        [SerializeField] private Projectile[] _projectilePrefabs;
+        [SerializeField] private ProjectilesConfiguration _projectilesConfiguration;
+        [SerializeField] private ProjectileId _defaultProjectileId;
         [SerializeField] private Transform _projectileSpawnPosition;
+        [SerializeField] private float _fireRateInSeconds;
         
         private IShip _ship;
-        private string _activeProjectileId;
+        private ProjectileId _activeProjectileId;
         private float _remainingSecondsToBeAbleToShoot;
-        
+        private ProjectileFactory _projectileFactory;
+
+        private void Awake()
+        {
+            var instance = Instantiate(_projectilesConfiguration);
+            _projectileFactory = new ProjectileFactory(instance);
+        }
+
         public void Configure(IShip ship)
         {
             _ship = ship;
-            _activeProjectileId = "Projectile1";
+            _activeProjectileId = _defaultProjectileId;
         }
 
         private void Update()
@@ -33,9 +41,11 @@ namespace Ships.Weapons
         
         private void Shoot()
         {
-            var prefab = _projectilePrefabs.First(projectile => projectile.Id.Equals(_activeProjectileId));
+            var projectile = _projectileFactory
+                .Create(_activeProjectileId.Value,
+                    _projectileSpawnPosition.position,
+                    _projectileSpawnPosition.rotation);
             _remainingSecondsToBeAbleToShoot = _fireRateInSeconds;
-            Instantiate(prefab, _projectileSpawnPosition.position, _projectileSpawnPosition.rotation);
         }
     }
 }

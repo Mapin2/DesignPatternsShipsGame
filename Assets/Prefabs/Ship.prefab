@@ -125,11 +125,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57139b765c924c35879a7a85ba18b6a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _fireRateInSeconds: 0.3
-  _projectilePrefabs:
-  - {fileID: 1286005151461825912, guid: e1f3a4aaa611e364bbc9a3af1744ee4c, type: 3}
-  - {fileID: 1286005151461825912, guid: 37a20ef16413a1048ab08b940a30886b, type: 3}
+  _projectilesConfiguration: {fileID: 11400000, guid: 82887b14cd0b87d4fae155ef0c59f6e1, type: 2}
+  _defaultProjectileId: {fileID: 11400000, guid: 0afbcf1108b2cba4cb0b950e509a8c39, type: 2}
   _projectileSpawnPosition: {fileID: 4612422824135159392}
+  _fireRateInSeconds: 0.3
 --- !u!1 &7719595751246254925
 GameObject:
   m_ObjectHideFlags: 0
