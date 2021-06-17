@@ -100,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _movementController: {fileID: 7191326466368188919}
   _weaponController: {fileID: -7788262044183679266}
+  _shipId: {fileID: 11400000, guid: fcab71bc03e57dd448c2ff6f346b41f6, type: 2}
 --- !u!114 &7191326466368188919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,7 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78907e91b5004f46a5ee306ba7235802, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 5
+  _speed: {x: 10, y: 1}
 --- !u!114 &-7788262044183679266
 MonoBehaviour:
   m_ObjectHideFlags: 0

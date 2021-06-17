@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Security.Cryptography;
 using UnityEngine;
 
 namespace Ships.Weapons.Projectiles
@@ -42,13 +40,13 @@ namespace Ships.Weapons.Projectiles
             DoDestory();
             Destroy(gameObject);
         }
-        
+
         private IEnumerator DestroyIn(float seconds)
         {
             yield return new WaitForSeconds(seconds);
             DestroyProjectile();
         }
-        
+
         protected abstract void DoDestory();
     }
 }

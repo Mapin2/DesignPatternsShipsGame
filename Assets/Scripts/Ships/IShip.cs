@@ -2,6 +2,6 @@
 {
     public interface IShip
     {
-        
+        public string Id { get; }
     }
 }

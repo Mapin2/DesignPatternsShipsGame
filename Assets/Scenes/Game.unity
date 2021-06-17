@@ -309,7 +309,7 @@ PrefabInstance:
     - target: {fileID: -7788262044183679266, guid: 545dc9f75e349da44888c221cf1a52e3, type: 3}
       propertyPath: _defaultProjectileId
       value: 
-      objectReference: {fileID: 11400000, guid: 886e45037c6b580479f762b70a6b5997, type: 2}
+      objectReference: {fileID: 11400000, guid: 0afbcf1108b2cba4cb0b950e509a8c39, type: 2}
     - target: {fileID: 3982472195643883700, guid: 545dc9f75e349da44888c221cf1a52e3, type: 3}
       propertyPath: m_Name
       value: Ship
@@ -604,7 +604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _camera: {fileID: 519420031}
-  _useAI: 0
+  _useAI: 1
   maxAIDistance: 10
   _useJoystick: 0
   _joystick: {fileID: 693677934}
