@@ -1,5 +1,7 @@
 # DesignPatternsShipsGame
- _Small game to apply and practice different kinds of design patterns._
+:warning: **Under construction** :warning:
+
+_Small game to apply and practice different kinds of design patterns._
 
 ## Patterns
 
